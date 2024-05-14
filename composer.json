@@ -1,0 +1,39 @@
+{
+  "name": "miratech/shopify-graphql-orm",
+  "description": "The Shopify Graphql",
+  "keywords": ["mira-tech", "shopify", "shopify-graphql", "shopify-graphql-orm"],
+  "homepage": "https://mira-tech.com",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Huan Hoang",
+          "email": "huyhuahg@gmail.com"
+      }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/console": "^10.48",
+    "illuminate/config": "^10.48",
+    "illuminate/support": "^10.48",
+    "illuminate/filesystem": "^10.48",
+    "illuminate/contracts": "^10.48",
+    "guzzlehttp/guzzle": "^7.8",
+    "guzzlehttp/psr7": "^2.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9",
+    "mockery/mockery": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "MiraTech\\ShopifyGraphqlOrm\\": "src/ShopifyGraphqlOrm/"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "MiraTech\\ShopifyGraphqlOrm\\Providers\\OrmServiceProvider"
+        ]
+    }
+  }
+}
